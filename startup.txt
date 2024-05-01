@@ -1,1 +1,1 @@
-gunicorn --bind=0.0.0.0 --timeout 600 --chdir Lagozon-AI-USE-CASES app:app
+gunicorn --bind=0.0.0.0 --timeout 600 --chdir ScreenCV app:app
