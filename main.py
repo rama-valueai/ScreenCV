@@ -14,10 +14,12 @@ app.config['SECRET_KEY'] = ''  # Replace 'your_secret_key_here' with your actual
 
 # Load SpaCy model globally to avoid reloading it on each request
 nlp = spacy.load('en_core_web_sm')
+#DefaultEndpointsProtocol=https;AccountName=storeunstructured;AccountKey=R6tMT72a5zmHdUUR4SppbaVWXH/zw+NYk+PrXEZd3shInh94/bppOcOLklASoGojFM4sj7KPJQFU+AStwwikKQ==;EndpointSuffix=core.windows.net
+string connectionString = Environment.GetEnvironmentVariable("AZURE_STORAGE_CONNECTION_STRING");
+BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 
-
-AZURE_STORAGE_CONNECTION_STRING = ''
-AZURE_CONTAINER_NAME = ''
+#AZURE_STORAGE_CONNECTION_STRING = ''
+AZURE_CONTAINER_NAME = 'storagecv'
 
 @app.route('/')
 def form():
