@@ -17,7 +17,7 @@ nlp = spacy.load('en_core_web_sm')
 AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=storeunstructured;AccountKey=R6tMT72a5zmHdUUR4SppbaVWXH/zw+NYk+PrXEZd3shInh94/bppOcOLklASoGojFM4sj7KPJQFU+AStwwikKQ==;EndpointSuffix=core.windows.net"
 #string connectionString = Environment.GetEnvironmentVariable("AZURE_STORAGE_CONNECTION_STRING");
 connectionString =AZURE_STORAGE_CONNECTION_STRING
-BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+#BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 
 #AZURE_STORAGE_CONNECTION_STRING = ''
 AZURE_CONTAINER_NAME = 'storagecv'
