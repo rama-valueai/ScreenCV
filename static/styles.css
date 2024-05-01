@@ -1,0 +1,132 @@
+/* Global Styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.nav-wrapper {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E4095; /* Deep Blue for Contrast */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFA500; /* Lighter Orange Color for Hover */
+}
+
+/* Footer Styles */
+.page-footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 150px; /* Adjust based on your logo's dimensions */
+}
+
+.header h1 {
+    color: #3e4095; /* Adding a touch of corporate color */
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.header p.tagline {
+    color: #333;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin: 5px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #3e4095;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a5fc8;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
