@@ -10,7 +10,7 @@ from spacy.matcher import Matcher #comparing patterns found with grammatical con
 app = Flask(__name__)
 
 # Set the secret key
-app.config['SECRET_KEY'] = ''  # Replace 'your_secret_key_here' with your actual secret key
+app.config['SECRET_KEY'] = 'rove2001'  # Replace 'your_secret_key_here' with your actual secret key
 
 # Load SpaCy model globally to avoid reloading it on each request
 nlp = spacy.load('en_core_web_sm')
